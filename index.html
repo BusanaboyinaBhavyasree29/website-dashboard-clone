@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="sidebar">
@@ -20,7 +20,7 @@
     <div class="main-content">
         <header>
             <h1>Overview</h1>
-            <button>New User</button>
+            <button id="new-user-btn">New User</button>
         </header>
         <section>
             <h2>Stats</h2>
@@ -39,7 +39,21 @@
                 </div>
             </div>
         </section>
+        <div id="new-user-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>New User</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
