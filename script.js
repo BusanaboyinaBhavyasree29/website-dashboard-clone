@@ -1,5 +1,3 @@
-
-
 // Get the modal
 var modal = document.getElementById("new-user-modal");
 
@@ -24,3 +22,5 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
